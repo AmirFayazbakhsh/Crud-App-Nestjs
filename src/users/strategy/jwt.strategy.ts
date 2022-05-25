@@ -7,7 +7,7 @@ import { usersController } from "../users.controller";
 
 
 @Injectable()
-export class JwtStrategy extends PassportStrategy(Strategy){
+export class JwtStrategy extends PassportStrategy(Strategy,'jwt'){
 
     constructor(config : ConfigService){
         super({
